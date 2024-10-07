@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo.css">
+  <title>Portfólio</title>
+</head>
+
+<body>
+
+
+  <div class="navbar" id="myNavbar">
+    <div class="navbar-content">
+      <a href="#sobre-mim">Sobre Mim</a>
+      <a href="#conhecimentos">Conhecimentos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </a>
+  </div>
+
+  <section id="sobre-mim" class="welcome-section">
+    <h1 class="welcome-title">Bem-vindo ao Meu Portfólio</h1>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="img/perfil.jpg" alt="Foto de perfil" width="300" height="300">
+      </div>
+      <div class="about-text">
+        <h2>Sobre Mim</h2>
+        <p> Olá, Meu nome é Bruno tenho 22 anos e a 7 meses, embarquei na jornada de aprendizagem de programação e desde
+          então, me apaixonei por esse mundo de possibilidades e desafios. Nesse período, me dediquei a estudar
+          diferentes linguagens e ferramentas, sempre buscando aprimorar minhas habilidades e resolver problemas,</p>
+        <p>Minha aplicação vem da vontade de aprender mais a cada dia e aplicar o conhecimento adquirido em projetos
+          reais. Agora, estou em busca da minha primeira oportunidade profissional, onde poder contribuir e, ao mesmo
+          tempo, continuar crescendo como desenvolvedor. Estou especialmente interessado em vagas remotas, pois sou pcd
+          e não tem vagas por perto com acessibilidade, </p>
+        <p>essa e uma pequena introdução sobre mim vamos conversar! </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="conhecimentos" class="knowledge-section">
+    <div class="knowledge-container">
+      <h2 class="knowledge-title">Conhecimentos</h2>
+      <div class="knowledge-content">
+        <p> venho me dedicando intensamente ao estudo de programação, adquirindo conhecimentos em tecnologias como HTML,
+          CSS, JavaScript, React e Bootstrap,tailwild. Durante esse período, também concluí um curso Full Stack, o que
+          ampliou a visão sobre desenvolvimento, mas foi no Front-End que mais me identifiquei. criar interfaces
+          intuitivas e funcionais, que proporcionem uma experiência agradável aos usuários.
+          Além disso, estou cursando Análise e Desenvolvimento de Sistemas (ADS) EAD na faculdade FECAF, atualmente no
+          segundo semestre, o que tem complementado meus estudos com uma base sólida</p>
+
+        <p>Estou sempre em busca de novos desafios e oportunidades para expandir meus conhecimentos. Acredito que a
+          aprendizagem contínua sempre vamos ter novos conhecimentos para desenvolver.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificados" class="certificates-section">
+    <div class="certificates-container">
+      <h2 class="certificates-title">Certificados</h2>
+      <div class="certificates-grid">
+        <div class="certificate-item">
+          <img src="img/Certificado-Programador Web Completo — Do Zero ao Full Stack_Bruno Grein Machado (1).pdf.png"
+            alt="Certificado de Desenvolvimento Web" class="certificate-image" width="200" height="200">
+          <div class="certificate-info">
+            <h3>Desenvolvimento Web Full Stack</h3>
+            <p>Genial Cursos - Concluído em 2024</p>
+          </div>
+        </div>
+        <div class="certificate-item">
+          <img src="img/certificado.png" alt="Certificado AWS" class="certificate-image" width="200" height="200">
+          <div class="certificate-info">
+            <h3>Desenvolvimento Pessoal e Empregabilidade</h3>
+            <p>UniFECAF - Concluído em 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contact-section">
+    <div class="contact-container">
+      <h2 class="contact-title">Entre em Contato</h2>
+      <div class="contact-info">
+        <p><strong>Telefone:</strong> <a href="tel:49985057431">+55 (49) 98505-7431</a></p>
+        <p><strong>Email:</strong> <a href="greinmachado@gmail.com">greinmachado@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/bruno-grein-machado-0b53a0302"
+            target="_blank">www.linkedin.com/in/bruno-grein-machado-0b53a0302</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleNavbar() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+    // Smooth scrolling for navbar links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
